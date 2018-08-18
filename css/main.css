@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,800");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+@media screen and (min-width: 837px) and (max-width: 1140px) {
+  #split-wrapper p {
+    font-size: 16px;
+    margin-bottom: 0; }
+  #split-wrapper i {
+    font-size: 14px;
+    padding: .3em;
+    border-radius: 20px; }
+  #split-wrapper h2 {
+    font-size: 24px; } }
+
+@media screen and (min-width: 746px) and (max-width: 836px) {
+  #split-wrapper p {
+    font-size: 14px;
+    margin-bottom: 0; }
+  #split-wrapper i {
+    font-size: 14px;
+    padding: .3em;
+    border-radius: 20px; }
+  #split-wrapper h2 {
+    font-size: 24px; } }
+
+@media screen and (min-width: 400px) and (max-width: 745px) {
+  #logo a {
+    font-size: 24px !important; }
+  #split-wrapper {
+    min-height: 90vw !important; }
+    #split-wrapper .layer {
+      min-height: 90vw !important; }
+      #split-wrapper .layer .content-wrap {
+        min-height: 90vw !important;
+        padding-top: 50px; }
+      #split-wrapper .layer h2 {
+        display: none; }
+      #split-wrapper .layer i {
+        display: none; }
+      #split-wrapper .layer p {
+        display: none; }
+      #split-wrapper .layer img {
+        width: 50%; }
+  .skewed .top {
+    width: calc(90vw + 1000px); }
+  .btn-download {
+    margin: 0 auto !important;
+    padding: 0.5em 1.5em !important;
+    border-radius: 50px; }
+    .btn-download h4 {
+      font-size: 18px; }
+    .btn-download h5 {
+      font-size: 12px; } }
+
+@media screen and (max-width: 399px) {
+  #logo a {
+    font-size: 24px !important; }
+  #split-wrapper {
+    min-height: 90vw !important; }
+    #split-wrapper .layer {
+      min-height: 90vw !important; }
+      #split-wrapper .layer .content-wrap {
+        min-height: 90vw !important;
+        padding-top: 50px; }
+      #split-wrapper .layer h2 {
+        display: none; }
+      #split-wrapper .layer i {
+        display: none; }
+      #split-wrapper .layer p {
+        display: none; }
+      #split-wrapper .layer img {
+        width: 50%; }
+  .skewed .top {
+    width: calc(90vw + 1000px); }
+  .btn-download {
+    margin: 0 auto !important;
+    padding: 0.5em 1.5em !important;
+    border-radius: 50px; }
+    .btn-download h4 {
+      font-size: 14px; }
+    .btn-download h5 {
+      font-size: 12px; } }
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif; }
+
+.bg-black {
+  background-color: #111; }
+
+/*-- Navbar-- */
+#logo {
+  background-color: #c91a66; }
+  #logo a {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 34px; }
+
+#navMenu {
+  background-color: #4FC3F7; }
+  #navMenu ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 0;
+    padding-bottom: 0; }
+    #navMenu ul li a.hover {
+      color: #042445; }
+
+.navbar-light .navbar-toggler {
+  color: #fff;
+  border-color: #fff; }
+
+/* Split Section 
+=====================*/
+#split-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 40vw;
+  overflow: hidden; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 400; }
+
+p {
+  color: #c91a66; }
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 40vw;
+  overflow: hidden; }
+  .layer .content-wrap {
+    position: absolute;
+    width: 100vw;
+    min-height: 40vw; }
+  .layer .content-body {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; }
+  .layer img {
+    position: absolute;
+    width: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .layer i {
+    color: #fff;
+    background-color: #4FC3F7;
+    padding: .5em;
+    border-radius: 30px; }
+
+.bottom {
+  background: #c91a66;
+  z-index: 1; }
+  .bottom .content-body {
+    right: 5%; }
+
+.top {
+  background: #eee;
+  color: #222;
+  z-index: 2;
+  width: 50vw; }
+  .top .content-body {
+    left: 5%; }
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #4FC3F7;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3; }
+
+.skewed .handle {
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top; }
+
+.skewed .top {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 995px); }
+
+.skewed .top .content-wrap {
+  transform: skew(30deg);
+  margin-left: 1000px; }
+
+.btn-download {
+  background-color: #c91a66;
+  padding: .5em 3em;
+  border-radius: 50px;
+  border: 3px solid #FDAB00; }
+  .btn-download:hover {
+    cursor: pointer;
+    background-color: #bd0655; }
